@@ -1,5 +1,5 @@
 import React from "react";
-import { createBrowserRouter } from "react-router";
+import { createBrowserRouter } from "react-router-dom";
 import MaingLayout from "../layouts/MaingLayout";
 import Home from "../page/Home";
 export const router = createBrowserRouter([
@@ -8,7 +8,7 @@ export const router = createBrowserRouter([
     Component: MaingLayout,
     children: [
         {
-            path: true,
+            index: true,
             Component: Home
         },
         {
